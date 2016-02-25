@@ -1,6 +1,6 @@
 {
-  "name": "algojs",
-  "version": "0.1.0",
+  "name": "algojs-sorting",
+  "version": "0.1.1",
   "description": "It provides Javascript implementation of fundamental sorting algorithms",
   "main": "index.js",
   "repository": {
