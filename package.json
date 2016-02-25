@@ -1,0 +1,32 @@
+{
+  "name": "algojs",
+  "version": "0.1.0",
+  "description": "It provides Javascript implementation of fundamental sorting algorithms",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angiolep/algojs-sorting.git"
+  },
+  "keywords": [
+    "algo",
+    "algorithms"
+  ],
+  "author": "Paolo Angioletti",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/angiolep/algojs/issues"
+  },
+  "homepage": "https://github.com/angiolep/algojs#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "ink-docstrap": "^1.1.2",
+    "jsdoc": "^3.4.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.4.5"
+  }
+}
+
