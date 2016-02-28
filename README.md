@@ -1,16 +1,14 @@
 # algojs-sorting
-It provides Javascript implementation of fundamental sorting algorithms
+It provides Javascript implementation of fundamental sorting algorithms.
 
-[![Build Status][travis-image]][travis-url]
+[![Build Status][travis-image]][travis-url][![Coverage Status][coveralls-image]][coveralls-url]
 
+## Examples
+Here there are some examples. API docs are published <a href="http://angiolep.github.io/algojs-sorting" target="_blank">here</a>.
 
-## Installation
-
-```bash
-npm install algojs-sorting
 ```
-
-## Usage
+npm install algojs-sorting --save
+```
 
 ```javascript
 var sort = require('algojs-sorting').insertionSort;
@@ -20,7 +18,10 @@ sort(array);
 // array is now sorted
 ```
 
-API docs are published <a href="http://angiolep.github.io/algojs-sorting" target="_blank">here</a>.
-
 [travis-image]: https://travis-ci.org/angiolep/algojs-sorting.svg?branch=master
 [travis-url]: https://travis-ci.org/angiolep/algojs-sorting
+
+[coveralls-image]: https://coveralls.io/repos/github/angiolep/algojs-sorting/badge.svg?branch=master
+[coveralls-url]: (https://coveralls.io/github/angiolep/algojs-sorting?branch=master)
+
+

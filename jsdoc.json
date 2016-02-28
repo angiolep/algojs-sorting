@@ -9,10 +9,8 @@
   },
   "plugins": ["plugins/markdown"],
   "templates": {
-    "cleverLinks": false,
-    "monospaceLinks": false
-  },
-  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false,
     "systemName": "algojs",
     "navType": "vertical"
   }
