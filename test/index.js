@@ -1,6 +1,6 @@
 'use strict';
 
-var _ = require('../index');
+var _ = require('../lib/index');
 var expect = require('chai').expect;
 
 // TODO execute a code coverage tool
