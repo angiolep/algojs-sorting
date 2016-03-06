@@ -1,17 +1,25 @@
 {
   "tags": {
-    "allowUnknownTags": true,
+    "allowUnknownTags": false,
     "dictionaries": ["jsdoc","closure"]
   },
   "source": {
     "includePattern": ".+\\.js(doc)?$",
     "excludePattern": "(^|\\/|\\\\)_"
   },
+
   "plugins": ["plugins/markdown"],
+
   "templates": {
-    "cleverLinks": true,
+    "cleverLinks": false,
     "monospaceLinks": false,
-    "systemName": "algojs",
+    "systemName": "algojs-sorting",
     "navType": "vertical"
+  },
+  "opts": {
+    "template": "templates/default",
+    "encoding": "utf8",
+    "destination": "./docs",
+    "recurse": true
   }
 }
