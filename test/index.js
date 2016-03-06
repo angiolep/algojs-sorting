@@ -6,6 +6,7 @@ var expect = require('chai').expect;
 // TODO execute a code coverage tool
 
 describe('algojs-sorting', function () {
+  
   describe('#compare()', function () {
     it('should compare Number types', function() {
       expect(_.compare(2, 5)).to.equal(-1);
@@ -45,12 +46,12 @@ describe('algojs-sorting', function () {
       var compare = function (a, b) {
         return a.y === b.y ? 0 : ( a.y > b.y ? 1 : -1);
       };
-      var minIdx = _.min(arr, compare);
+      var minIdx = _.min(arr, 0, arr.length - 1, compare);
       expect(minIdx).to.equal(1);
     });
     it('should select the min index from the given start index', function () {
       var arr = [9, 5, 12, 8, 15, 6, 20];
-      expect(_.min(arr, null, 2)).to.equal(5);
+      expect(_.min(arr, 2)).to.equal(5);
     });
   });
 
@@ -134,6 +135,19 @@ describe('algojs-sorting', function () {
       expect(arr).to.have.length(8);
       expect(arr).to.include.members([1, 2, 3, 4, 5, 6, 7, 8]);
 
+    });
+  });
+
+  describe('#mergeSort', function () {
+    it('should do nothing when empty arr is given', function () {
+      var arr = [];
+      _.mergeSort(arr);
+      expect(arr).to.deep.equal([]);
+    });
+    it('should sort the given arr as side effect', function () {
+      var arr = [6, 5, 3, 1, 8, 7, 2, 4];
+      _.mergeSort(arr);
+      expect(arr).to.deep.equal([1, 2, 3, 4, 5, 6, 7, 8]);
     });
   });
 });
